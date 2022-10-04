@@ -37,7 +37,19 @@ Code that is meant to be imported and used in another program is a module.
 Script are meant to be run directly.
 
 ***
+
 ## Shebang
+
+The shebang at the beginning of a script allows us to run our python script as an executable without typing `python` before the file name.
+
+```py
+#!/usr/bin/env python3
+
+```
+
+If we add this code in the beginning of the script the user can run the script using `./script.py` instead of `python script.py`
+
+***
 
 ## if __name__ == "__main__":
 
@@ -61,6 +73,7 @@ Lets use the `sys.argv` list which allows us to get input from the user and prin
 Lets look at the following script
 
 ```py
+#!/usr/bin/env python3
 import sys
 # The user input starts at index 1 in the sys.argv list. 
 name = sys.argv[1]
@@ -71,7 +84,7 @@ if __name__ == "__main__":
 We can run this script in the terminal using the following command
 
 ```bash
-$ python bin/script.py Steve
+$ ./bin/script.py Steve
 The name is Steve 
 ```
 
@@ -81,6 +94,7 @@ We can also run shell commands using the `os` module
 Lets try to use the `ls -l` shell command in our script.
 
 ```py
+#!/usr/bin/env python3
 import os
 if __name__ == "__main__":
     os.system('ls -l')
@@ -89,7 +103,7 @@ if __name__ == "__main__":
 The script will give us a list of files that are in the current directory.
 
 ```bash
-$ python bin/script.py
+$ ./bin/script.py
 -rw-r--r--  1 user  staff  1810 Jul 28 19:23 CONTRIBUTING.md
 -rw-r--r--  1 user  staff  1346 Jul 28 19:23 LICENSE.md
 -rw-r--r--@ 1 user  staff  3653 Sep 27 22:30 README.md
