@@ -110,6 +110,36 @@ $ ./bin/script.py
 drwxr-xr-x  3 user  staff    96 Sep 27 21:53 bin
 ```
 
+### Bash Scripts
+
+A Bash script is a text file which can contains a series of commands. These commands can
+help us automate tasks that would require the developer to type multiple commands in the
+terminal. Any task you can run in the terminal can be put in a Bash script. All you need to
+do is add the commands sequentially in the Bash file. For Bash scripts the convention is to use the `.sh` file extension.
+
+Lets take a look at a Bash script.
+
+```bash
+#!/bin/bash
+echo "Files in this directory"
+ls -a
+```
+
+Before running the script you may need to give it executable permission. You can change the permissions by running `chmod +x script.sh`. Now we can run the script using the following command.
+
+```bash
+./script.sh
+```
+
+The output should return a message and the output of the `ls` command will output the files of
+the directory the script is being run in.
+
+```txt
+Files in this directory
+.               .canvas         .github         LICENSE.md      Pipfile.lock    bin
+..              .git            CONTRIBUTING.md Pipfile         README.md       script.sh
+```
+
 ## Conclusion
 
 We have covered some introductory concepts in scripting. You have learned how to accept
