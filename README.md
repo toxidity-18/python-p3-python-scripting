@@ -65,7 +65,7 @@ If we import the script into another program the code in the if statement will n
 
 ***
 
-## Accepting arguments form command line
+## Accepting arguments from command line
 
 Using the sys module we can accept inputs from the user from the command line.
 Lets use the `sys.argv` list which allows us to get input from the user and print it.
