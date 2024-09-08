@@ -1,0 +1,6 @@
+What is the meaning o fthe word module and script
+What is the use of the word shebang
+How to use os system to run shell command
+What command is used to run with the os system
+  os.system('ls -l')
+Meaning of the word bash script
